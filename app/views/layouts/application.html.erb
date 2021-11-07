@@ -11,15 +11,50 @@
   </head>
 
   <body>
+  	<div class="lines">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+  	</div>
  	<div class="title">
-	<h1>Veeva Systems Doctor Perscription KPI</h1>
+		<h1>Veeva Systems Doctor Perscription KPIs</h1>
 	</div>
-	<ul>
-		<%= link_to "Home", articles_path,class:"navbarItem" %>
-		<%= link_to "Top Doctors", top_doctor_topdoctor_path,class:"navbarItem" %>
-		<%= link_to "Trends", trends_trends_path,class:"navbarItem" %>
-		<%= link_to "Top Targets", top_target_toptarget_path,class:"navbarItem" %>
-	</ul>
+	</br>
+	<div class="holder">
+		<%= link_to "Home", articles_path, class:"button"%>
+		<%= link_to "Top Doctors", top_doctor_topdoctor_path, class:"button"%>
+		<%= link_to "Trends", trends_trends_path, class:"button"%>
+		<%= link_to "Top Targets", top_target_toptarget_path, class:"button"%>
+	</div>
     <%= yield %>
+    <footer class="footer">
+    	<div class="flex-container">
+			<div class="flex-child magenta">
+				</br>
+				<h1>Created For: Hack Ohio 2021, Veeva Systems</h1>
+				<h1>Created By: Andrew Conners, Alex Hass, Noah Hufnagel, Derek Nelson</h1>
+				<h1>Credit To: Veeva Systems for the data source</h1>
+		    </div>
+		    <div class="flex-child green">
+		    	<%= link_to "https://www.veeva.com/" do %>
+   					<%= image_tag "veeva-v-shot_4x.png", class:"logo" %>
+				<% end %>
+		    </div>
+		  
+		</div>
+    </footer>
   </body>
 </html>
