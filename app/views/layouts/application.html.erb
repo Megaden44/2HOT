@@ -11,35 +11,40 @@
   </head>
 
   <body>
-  	<div class="lines">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-  	</div>
- 	<div class="title">
-		<h1>Veeva Systems Doctor Perscription KPIs</h1>
-	</div>
-	</br>
-	<div class="holder">
-		<%= link_to "Home", articles_path, class:"button"%>
-		<%= link_to "Top Doctors", top_doctor_topdoctor_path, class:"button"%>
-		<%= link_to "Trends", trends_trends_path, class:"button"%>
-		<%= link_to "Top Targets", top_target_toptarget_path, class:"button"%>
-	</div>
-    <%= yield %>
+  	<header>
+	  	<div class="title">
+			<h1>Veeva Systems Doctor Perscription KPIs</h1>
+		</div>
+		</br>
+		<div class="holder">
+			<%= link_to "Home", articles_path, class:"button"%>
+			<%= link_to "Top Doctors", top_doctor_topdoctor_path, class:"button"%>
+			<%= link_to "Trends", trends_trends_path, class:"button"%>
+			<%= link_to "Top Targets", top_target_toptarget_path, class:"button"%>
+		</div>
+	</header>
+	<article>
+	  	<div class="lines">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+	  	</div>
+	 	
+		<%= yield %>
+    <article>
     <footer class="footer">
     	<div class="flex-container">
 			<div class="flex-child magenta">
